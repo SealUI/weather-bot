@@ -1,0 +1,15 @@
+name: 'Weather-Bot'
+
+on:
+  push:
+  schedule:
+    - cron: '10 * * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@master
+      - name: 'Get Result And Send'
+        run: bash ./weather.sh
