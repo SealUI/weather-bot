@@ -5,7 +5,8 @@
 *.log
 *.php
 *.js
-*.txt 
+*.txt
+.bak
 # BlueJ files
 *.ctxt
 
